@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="15.1" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMEXPL.CLUSTER.CLASS" COMPONENT="Cluster" ID="Clus" X="554" Y="93" DESCRIPTION="Cluster" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Clus">
+<PROPERTIES Bins="100" Clusvar="_SEGMENT_" ClusvarLabel="Segment Variable" ClusvarRole="SEGMENT" MaxC="3" NominalEncoding="GLM" OrdinalEncoding="RANK" MissingInterval="DEFAULT" MissingNominal="DEFAULT" MissingOrdinal="DEFAULT" ImputationMethod="NONE" HideVariable="Y" TrainDefaults="Y" Learn="." LearnInitial="0.5" LearnFinal="0.02" LearnSteps="1000" MaxIter="10" MaxSteps="1200" XConv="0.0001" Initial="DEFAULT" Drift="N" Radius="0" Stdize="STD" Summary="N" TreeProfile="Y" ClusterGraphs="Y" NumberClusterMethod="USER" DistancePlot="Y" FinalMaxNum="20" AutomaticMaxNum="50" AutomaticMinNum="2" AutomaticMethod="WARD" CCCCutOff="3" ForceRun="N" RunAction="Train" Component="Cluster">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.FILTERTOOL.CLASS" COMPONENT="Filter" ID="Filter" X="269" Y="90" DESCRIPTION="Filter" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Filter">
+<PROPERTIES KeepMissingClass="Y" KeepMissingInterval="Y" NormalizeClassValue="Y" ExportTable="FILTERED" TabletoFilter="TRAIN" IntervalFilterMethod="MANUAL" ClassFilterMethod="MINPCT" MinFreq="1" MinPercent="0.01" MaxValues="25" MADSCutoff="9" SpacingsCutoff="9" StddevCutoff="3" PercentsCutoff="0.5" PublishScoreCode="Y" CreateDistributionData="Y" UpdateClassLevel="N" ForceRun="N" RunAction="Train" Component="Filter">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="MntMeatProducts" AttributeName="INTERVALMAX" AttributeValue="1550"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<CLASSFILTER Type="DATA">
+<Data/>
+<Metadata>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VALUE" LABEL="Value" LENGTH="12" FORMAT="" TYPE="C"/>
+<Variable NAME="COUNT" LABEL="Frequency Count" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="PERCENT" LABEL="Percent" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="Filter" LABEL="" LENGTH="1" FORMAT="" TYPE="C"/>
+</Metadata>
+</CLASSFILTER>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.IDS.CLASS" COMPONENT="DataSource" ID="Ids" X="123" Y="56" DESCRIPTION="CUSTOMER_PERSONALITY_ANALYSIS" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Ids">
+<PROPERTIES DataSource="customerpersonalityanalysis" Scope="LOCAL" Role="RAW" Library="PROJ" Table="CUSTOMER_PERSONALITY_ANALYSIS" NCols="27" NObs="2240" NBytes="525312" Segment="" DataSourceRole="RAW" OutputType="VIEW" ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC" ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y" MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y" VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="customerpersonalityanalysis" DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="u61025951" DsCreateDate="1966181756.4" DsModifiedBy="u61025951" DsModifyDate="1966181756.4" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT" SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train" Component="DataSource" Description="">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="AcceptedCmp1" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="AcceptedCmp1" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="AcceptedCmp2" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="AcceptedCmp2" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="AcceptedCmp3" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="AcceptedCmp3" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="AcceptedCmp4" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="AcceptedCmp4" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="AcceptedCmp5" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="AcceptedCmp5" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="Complain" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Complain" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="Dt_Customer" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Education" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="ID" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="ID" AttributeName="LEVEL" AttributeValue="INTERVAL"/>
+<DELTA Variable="Income" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Kidhome" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Kidhome" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Marital_Status" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NumCatalogPurchases" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NumDealsPurchases" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NumDealsPurchases" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="NumStorePurchases" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NumWebPurchases" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NumWebVisitsMonth" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Recency" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Response" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Response" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="Teenhome" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Teenhome" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Year_Birth" AttributeName="ROLE" AttributeValue="REJECTED"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Profile" ID="Prof" X="696" Y="171" DESCRIPTION="Segment Profile" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="ASSESS" TOOLPREFIX="Prof">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMEXPL.PROFILE.SOURCE" DataNeeded="Y" MinWorth="0.01" MaxNumInput="6" MaxNumReport="10" NumHistBars="8" ProfileAll="N" PrintWorth="Y" UseReportVars="Y" TargetRole="NONE" OtherPercentCutOff="95" MaxDepth="1" ForceRun="N" RunAction="Train" Component="Profile">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.EMTRANS.CLASS" COMPONENT="Transform" ID="Trans" X="415" Y="154" DESCRIPTION="Transform Variables" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Trans">
+<PROPERTIES DefaultMethod="LOG" DefaultTargetMethod="NONE" DefaultClassMethod="NONE" DefaultClassTargetMethod="NONE" Offset="1" MinOffset="Y" HideVariable="Y" RejectVariable="Y" GroupCutoff="0.1" GroupMissing="N" EmRandomSeed="12345" EmSampleSize="MAX" EmSampleMethod="RANDOM" MissingValue="USEINSEARCH" SummaryVariables="TRANSFORMED" SummaryStatistics="Y" UseMetaTransform="Y" MissingAsLevel="N" NumberofBins="VARIABLES" MaxOptimalBins="4" ForceRun="N" RunAction="Train" Component="Transform">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="Income" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntFishProducts" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntFruits" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntGoldProds" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntMeatProducts" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntSweetProducts" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="MntWines" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="NumCatalogPurchases" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="NumStorePurchases" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="NumWebPurchases" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="NumWebVisitsMonth" AttributeName="METHOD" AttributeValue="LOG"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<INTERACTION Type="DATA">
+<Data/>
+<Metadata/>
+</INTERACTION>
+<FORMULA Type="DATA">
+<Data/>
+<Metadata/>
+</FORMULA>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="VariableClustering" ID="VarClus" X="269" Y="10" DESCRIPTION="Variable Clustering" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="VarClus">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMEXPL.VARIABLECLUSTERING.SOURCE" HideVariable="Y" MaxClus="." ClusSource="CORR" ClusHierachy="Y" IncludeClassVar="N" TwoStageClus="AUTO" SuppressSampWarn="N" ExportedComp="CLUSTERCOMP" MaxEigen="." Proportion="0" PrintOption="SHORT" ForceRun="N" RunAction="Train" Component="VariableClustering" DataNeeded="Y">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="Trans" TO="Clus"/>
+<CONNECTION FROM="Ids" TO="VarClus"/>
+<CONNECTION FROM="Ids" TO="Filter"/>
+<CONNECTION FROM="Filter" TO="Trans"/>
+<CONNECTION FROM="Clus" TO="Prof"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
