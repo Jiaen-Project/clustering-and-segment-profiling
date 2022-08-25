@@ -1,4 +1,4 @@
-# clustering-and-segment-profile
+# clustering-and-segment-profiling
 
 The objectives of this project are:
 1. Develop data curation skills
