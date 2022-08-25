@@ -1,1 +1,1 @@
-# clustering-and-segment-profilt
+# clustering-and-segment-profile
